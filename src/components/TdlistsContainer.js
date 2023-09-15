@@ -12,7 +12,7 @@ class TdlistsContainer extends Component {
     }
     loadTdlists() {
         axios
-            .get("https://todoapp027-0cf13cb8ff7b.herokuapp.com/api/version1/tdlists")
+            .get("/api/version1/tdlists")
             .then((res) => {
                 this.setState({ tdlists: res.data });
             })
